@@ -1,0 +1,5 @@
+Draak is a new, lightweight, DSL for easily creation of web application using Groovy.
+
+Routes:
+   A route is an HTTP method paired with a URL.
+
