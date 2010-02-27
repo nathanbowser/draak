@@ -3,3 +3,5 @@
 .project
 build
 *.swp #For vi
+*#
+.#*
