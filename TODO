@@ -1,0 +1,19 @@
+- Add routing support for all http methods, not that they really matter ;)
+- Named parameters in the url
+        e.g.
+                /people/:name -> the closure will receive 'name' with the value from the url
+- Closure block should receive request & response objects
+- Helpers closure, which will expose new methods to all the routing closures
+        e.g.
+                helpers {
+                    foo = {
+
+                    }
+                    baz = {
+
+                    }
+                }
+- Custom port/server
+- Module server usage (plug and play server architecture)
+- Filters
+
