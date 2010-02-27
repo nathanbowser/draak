@@ -1,0 +1,7 @@
+The samples directory contains sample applications which demo draak.
+
+Make sure draak is installed before running the sample applications.
+
+    grape install com.koopab draak 0.1
+
+    should do the trick...

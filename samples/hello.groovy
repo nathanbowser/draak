@@ -1,4 +1,6 @@
-//Sorry
+@Grab(group="com.koopab", module="draak", version="0.1")
+import com.koopab.draak.*
+
 Draak.init this
 
 get "/index.html", {
