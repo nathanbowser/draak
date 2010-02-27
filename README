@@ -1,5 +1,6 @@
-Draak is a new, lightweight, DSL for easily creation of web application using Groovy.
+Draak is a new, lightweight, DSL for easily creation of web application using Groovy.  Draak is highly inspired from the Sinartra app, for Ruby.
 
 Routes:
    A route is an HTTP method paired with a URL.
+
 
