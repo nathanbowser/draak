@@ -1,4 +1,8 @@
 usePlugin 'groovy'
+usePlugin 'maven'
+
+version = '0.1'
+group = 'com.koopab'
 
 repositories {
 	mavenCentral()
