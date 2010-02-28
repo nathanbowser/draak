@@ -1,5 +1,7 @@
 package com.koopab.draak
 
+import static Thread.currentThread
+
 class Draak { 
     static init(app) {
         def draak = new DraakApp().with {
@@ -8,8 +10,11 @@ class Draak {
             app.put = { url, block -> route("PUT", url, block) }
             app.delete = { url, block -> route("DELETE", url, block) }
             
-            //Is this the best way to start the app, after the script has been processed?
-            addShutdownHook { startApp() }
+            def script = currentThread()
+            Thread.start {
+                script.join()
+                startApp()
+            }
         }        
     }
 }
