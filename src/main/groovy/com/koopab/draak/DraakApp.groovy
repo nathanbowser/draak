@@ -16,10 +16,10 @@ class DraakApp {
     def startApp() {
         println "Starting Draak w/ the following routes:"
         println routes
-		def server = new Server(8080)
-		def context = new Context(server, "/", Context.SESSIONS)
-		context.resourceBase = "."
-		context.addServlet(TemplateServlet, "*.gsp")
-		server.start()
+	def server = new Server(8080)
+	def context = new Context(server, "/", Context.SESSIONS)
+	context.resourceBase = "."
+	context.addServlet(TemplateServlet, "*.gsp")
+	server.start()
     }
 }
