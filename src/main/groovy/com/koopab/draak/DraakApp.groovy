@@ -16,10 +16,11 @@ class DraakApp {
     def startApp() {
         println "Starting Draak w/ the following routes:"
         println routes
-	def server = new Server(8080)
-	def context = new Context(server, "/", Context.SESSIONS)
-	context.resourceBase = "."
-	context.addServlet(TemplateServlet, "*.gsp")
-	server.start()
+		def host = new Host(app: this)
+        def server = new Server(7500)
+        def context = new Context(server, "/", Context.SESSIONS)
+        context.addServlet(new ServletHolder(host), "/*")
+        server.start()
+		println "Draak is now emitting routes @ http://localhost:7500"
     }
 }
