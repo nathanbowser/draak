@@ -8,7 +8,7 @@ class Host extends HttpServlet {
 	DraakApp app;
 	
 	void service(HttpServletRequest request, HttpServletResponse response) {
-		println request
-		println app
+	    println request
+	    println app
 	}
 }
